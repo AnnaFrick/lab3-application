@@ -7,22 +7,22 @@ const SignCounterComponent = ({ text }) => {
 
   return (
     <div className='signCounter'>
-      <h4>Sign Counter</h4>
+      <h4>Character Counter</h4>
       <div className='results'>
       <div className='result-frame'>
-        <p>Characters in text:</p>
+        <p>Total:</p>
         <h2>{counter.countSigns()}</h2>
       </div>
       <div className='result-frame'>
-        <p>Vowels in the text:</p>
+        <p>Vowels:</p>
         <h2>{counter.countVowels()}</h2>
       </div>
       <div className='result-frame'>
-        <p>Consonants in text:</p>
+        <p>Consonants:</p>
         <h2>{counter.countConsonants()}</h2>
       </div>
       <div className='result-frame'>
-        <p>Other signs in text:</p>
+        <p>Other characters:</p>
         <h2>{counter.countOtherSigns()}</h2>
       </div>
       </div>

@@ -2,8 +2,6 @@
 
 ### Funktionella krav
 
-
-
 ### Icke-funktionella krav
 
 ### Issues
