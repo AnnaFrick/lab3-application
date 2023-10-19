@@ -1,17 +1,17 @@
 import React from 'react'
-import { SignCounter } from 'sign-analysis-module'
-import '../SignCounter.css'
+import { CharacterCounter } from 'character-analysis-module'
+import '../CharacterComponents.css'
 
-const SignCounterComponent = ({ text }) => {
-  const counter = new SignCounter(text)
+const CharacterCounterComponent = ({ text }) => {
+  const counter = new CharacterCounter(text)
 
   return (
-    <div className='signCounter'>
+    <div className='character-component'>
       <h4>Character Counter</h4>
       <div className='results'>
       <div className='result-frame'>
         <p>Total:</p>
-        <h2>{counter.countSigns()}</h2>
+        <h2>{counter.countCharacters()}</h2>
       </div>
       <div className='result-frame'>
         <p>Vowels:</p>
@@ -23,11 +23,11 @@ const SignCounterComponent = ({ text }) => {
       </div>
       <div className='result-frame'>
         <p>Other characters:</p>
-        <h2>{counter.countOtherSigns()}</h2>
+        <h2>{counter.countOtherCharacters()}</h2>
       </div>
       </div>
     </div>
   )
 }
 
-export default SignCounterComponent
+export default CharacterCounterComponent

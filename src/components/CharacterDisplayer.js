@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { SignDisplayer } from 'sign-analysis-module'
-import '../SignCounter.css'
+import { CharacterDisplayer } from 'character-analysis-module'
+import '../CharacterComponents.css'
 
-const SignDisplayerComponent = ({ text }) => {
-  const displayer = new SignDisplayer(text)
+const CharacterDisplayerComponent = ({ text }) => {
+  const displayer = new CharacterDisplayer(text)
   const [openSection, setOpenSection] = useState(null)
 
   const handleSectionClick = (sectionName) => {
@@ -15,7 +15,7 @@ const SignDisplayerComponent = ({ text }) => {
   }
 
   return (
-    <div className="signCounter">
+    <div className="character-component">
       <h4>Character Displayer</h4>
       <div className="results">
         <div
@@ -37,8 +37,8 @@ const SignDisplayerComponent = ({ text }) => {
           <p>Consonants in text</p>
         </div>
         <div
-          className={`result-frame ${openSection === 'otherSigns' ? 'open' : ''}`}
-          onClick={() => handleSectionClick('otherSigns')}
+          className={`result-frame ${openSection === 'otherCharacters' ? 'open' : ''}`}
+          onClick={() => handleSectionClick('otherCharacters')}
         >
           <p>Other characters</p>
         </div>
@@ -47,10 +47,10 @@ const SignDisplayerComponent = ({ text }) => {
         {openSection === 'content' && <p>{displayer.showContent()}</p>}
         {openSection === 'vowels' && <p>{displayer.showVowels()}</p>}
         {openSection === 'consonants' && <p>{displayer.showConsonants()}</p>}
-        {openSection === 'otherSigns' && <p>{displayer.showOtherSigns()}</p>}
+        {openSection === 'otherCharacters' && <p>{displayer.showOtherCharacters()}</p>}
       </p>
     </div>
   )
 }
 
-export default SignDisplayerComponent
+export default CharacterDisplayerComponent

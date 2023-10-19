@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react'
-import SignCounterComponent from './SignCounter'
-import SignDisplayerComponent from './SignDisplayer'
-import SignStatisticsComponent from './SignStatistics'
+import CharacterCounterComponent from './CharacterCounter'
+import CharacterDisplayerComponent from './CharacterDisplayer'
+import CharacterStatisticsComponent from './CharacterStatistics'
 import '../TextInput.css'
 
 const TextInput = () => {
@@ -19,22 +19,23 @@ const TextInput = () => {
 
   return (
     <div className='text-input-container'>
-      <h3>Type your text to analyze:</h3>
-      <textarea
-        value={inputText}
-        onChange={handleTextChange}
-        placeholder="Enter text to analyze here..."
-        rows="4"
-        cols="50"
-      ></textarea>
-      <button onClick={handleSubmit}>Submit</button>
-
+      <div className='text-input'>
+        <h3>Type your text to analyze:</h3>
+        <textarea
+          value={inputText}
+          onChange={handleTextChange}
+          placeholder="Enter text to analyze here..."
+          rows="4"
+          cols="50"
+        ></textarea>
+        <button onClick={handleSubmit}>Submit</button>
+      </div>
       {submittedText && (
         <div className="answer-container">
-          
-          <SignCounterComponent text={submittedText} />
-          <SignDisplayerComponent text={submittedText} />
-          <SignStatisticsComponent text={submittedText} />
+
+          <CharacterCounterComponent text={submittedText} />
+          <CharacterDisplayerComponent text={submittedText} />
+          <CharacterStatisticsComponent text={submittedText} />
         </div>
       )}
     </div>
