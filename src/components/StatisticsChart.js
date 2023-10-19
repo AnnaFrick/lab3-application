@@ -1,5 +1,6 @@
 import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from 'recharts'
+import '../Chart.css'
 
 const ChartComponent = ({ characterCounts }) => {
 
@@ -9,13 +10,17 @@ const ChartComponent = ({ characterCounts }) => {
   }));
 
   return (
-    <BarChart width={400} height={300} data={characterCountsArray}>
-      <XAxis dataKey="character" />
-      <YAxis />
-      <Tooltip />
-      <Legend />
-      <Bar dataKey="count" fill="rgba(75, 192, 192, 0.6)" />
-    </BarChart>
+    <div className="chart-container">
+      <div className="bar-chart">
+        <BarChart width={400} height={300} data={characterCountsArray}>
+          <XAxis dataKey="character" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Bar dataKey="count" fill="darkorange" />
+        </BarChart>
+      </div>
+    </div>
   );
 };
 

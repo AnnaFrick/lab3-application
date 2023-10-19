@@ -1,0 +1,55 @@
+/* Chart.css */
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #f5f5f5;
+  }
+  
+  .bar-chart {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  /* Customize the tooltip style */
+  .recharts-tooltip {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  /* Customize the legend style */
+  .recharts-legend {
+    font-size: 14px;
+  }
+  
+  /* Customize the axis labels */
+  .recharts-cartesian-axis-tick-value {
+    font-size: 12px;
+  }
+  
+  /* Customize the bar colors */
+  .recharts-bar-rect {
+    fill: #6da5ff;
+  }
+  
+  /* Customize the grid lines */
+  .recharts-cartesian-grid-horizontal line {
+    stroke: #ccc;
+  }
+  
+  /* Customize the Y-axis label */
+  .recharts-cartesian-axis-label {
+    font-size: 14px;
+  }
+  
+  /* Customize the X-axis label */
+  .recharts-cartesian-x-axis-tick-value {
+    font-size: 14px;
+  }
+  

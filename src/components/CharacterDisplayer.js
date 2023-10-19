@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CharacterDisplayer } from 'character-analysis-module'
-import '../CharacterComponents.css'
+import '../CharacterComponent.css'
 
 const CharacterDisplayerComponent = ({ text }) => {
   const displayer = new CharacterDisplayer(text)
@@ -16,31 +16,32 @@ const CharacterDisplayerComponent = ({ text }) => {
 
   return (
     <div className="character-component">
-      <h4>Character Displayer</h4>
+      <h4>Display characters</h4>
+      <p>Click on the category you'de like to display!</p>
       <div className="results">
         <div
           className={`result-frame ${openSection === 'content' ? 'open' : ''}`}
           onClick={() => handleSectionClick('content')}
         >
-          <p>Text content</p>
+          <h5>Text content</h5>
         </div>
         <div
           className={`result-frame ${openSection === 'vowels' ? 'open' : ''}`}
           onClick={() => handleSectionClick('vowels')}
         >
-          <p>Vowels in text</p>
+          <h5>Vowels</h5>
         </div>
         <div
           className={`result-frame ${openSection === 'consonants' ? 'open' : ''}`}
           onClick={() => handleSectionClick('consonants')}
         >
-          <p>Consonants in text</p>
+          <h5>Consonants</h5>
         </div>
         <div
           className={`result-frame ${openSection === 'otherCharacters' ? 'open' : ''}`}
           onClick={() => handleSectionClick('otherCharacters')}
         >
-          <p>Other characters</p>
+          <h5>Other characters</h5>
         </div>
       </div>
       <p className='display-characters'>

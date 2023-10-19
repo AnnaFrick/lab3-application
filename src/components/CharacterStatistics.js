@@ -1,7 +1,7 @@
 import React from 'react'
 import { CharacterStatistics } from 'character-analysis-module'
 import ChartComponent from './StatisticsChart'
-import '../CharacterComponents.css'
+import '../CharacterComponent.css'
 
 const CharacterStatisticsComponent = ({ text }) => {
   const stats = new CharacterStatistics(text)
@@ -19,7 +19,8 @@ const CharacterStatisticsComponent = ({ text }) => {
 
   return (
     <div className='character-component'>
-      <h4>Leader board of top 5</h4>
+      <h4>Top 5</h4>
+      <p>The top 5 most used characters of each category</p>
       <div className='results'>
         <div className='result-frame'>
           <h5>Total:</h5>

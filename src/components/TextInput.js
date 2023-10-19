@@ -32,7 +32,6 @@ const TextInput = () => {
       </div>
       {submittedText && (
         <div className="answer-container">
-
           <CharacterCounterComponent text={submittedText} />
           <CharacterDisplayerComponent text={submittedText} />
           <CharacterStatisticsComponent text={submittedText} />
