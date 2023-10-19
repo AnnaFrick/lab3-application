@@ -29,6 +29,8 @@
 2. Gå till localhost:3000 i webbläsaren (om den inte öppnas automatiskt). 
 3. Webbapplikationen ska vara en webbapplikation.
 
+![Start av webbapplikation](../img/start-app.png)
+
 ### 2.1.1 Webbapplikationen ska kunna ta emot input i form av text.
 1. Skriv in text i textfältet med följande innehåll: "This is a test text containing vowels, consonants and special characters: 111223.".
 2. Tryck på knappen "Analyze".
@@ -36,6 +38,8 @@
 ### 3.1.1 Webbapplikationen ska räkna antal tecken i texten.
 1. Utför stegen i testfall 2.1.1.
 2. Webbapplikationen ska räkna antal tecken i den angivna texten och visa resultatet.
+
+![Räkneresultat](../img/count-characters.png)
 
 ### 3.2.1 Webbapplikationen ska räkna antal vokaler i texten.
 1. Utför stegen i testfall 2.1.1.
@@ -58,24 +62,34 @@
 2. Klicka på fältet som visar "Text content".
 3. Webbapplikationen ska visa input texten som matats in.
 
+![Text content](../img/display-textcontent.png)
+
 ### 4.2.1 Webbapplikationen ska visa vilka vokaler som finns i texten.
 1. Utför stegen i testfall 2.1.1.
 2. Klicka på fältet som visar "Vowels".
 3. Webbapplikationen ska visa vilka vokaler som finns i texten.
+
+![Vowels](../img/display-vowels.png)
 
 ### 4.3.1 Webbapplikationen ska visa vilka konsonanter som finns i texten.
 1. Utför stegen i testfall 2.1.1.
 2. Klicka på fältet som visar "Consonants".
 3. Webbapplikationen ska visa vilka konsonanter som finns i texten.
 
+![Consonants](../img/display-consonants.png)
+
 ### 4.4.1 Webbapplikationen ska visa vilka övriga tecken som finns i texten.
 1. Utför stegen i testfall 2.1.1.
 2. Klicka på fältet som visar "Other characters".
 3. Webbapplikationen ska visa vilka övriga tecken som finns i texten.
 
+![Other characters](../img/display-othercharacters.png)
+
 ### 5.1.1 Webbapplikationen ska visa statistik över texten.
 1. Utför stegen i testfall 2.1.1.
 2. Webbapplikationen ska visa statistik över vilka tecken som används mest.
+
+![Statistik](../img/statistics.png)
 
 ### 5.2.1 Webbapplikationen ska visa statistik över vilka vokaler som finns i texten.
 1. Utför stegen i testfall 2.1.1.
@@ -101,5 +115,9 @@
 ### 8.1.1 Webbapplikationen ska visa en grafisk representation av statistiken.
 1. Utför stegen i testfall 2.1.1.
 2. Webbapplikationen ska visa en grafisk representation av statistiken över tecken, vokaler och konsonanter.
+
+![Stapeldiagram tecken](../img/chart-characters.png)
+![Stapeldiagram vokaler](../img/chart-vowels.png)
+![Stapeldiagram konsonanter](../img/chart-consonants.png)
 
 
