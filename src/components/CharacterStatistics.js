@@ -40,12 +40,15 @@ const CharacterStatisticsComponent = ({ text }) => {
           {renderCharacterCounts(stats.getTopOtherCharacters())}
         </div>
       </div>
+        <h5>Characters chart</h5>
       <div className='chart-container'>
         <ChartComponent characterCounts={stats.getTopCharacters()} />
       </div>
+      <h5>Vowels chart</h5>
       <div className='chart-container'>
         <ChartComponent characterCounts={stats.getTopVowels()} />
       </div>
+        <h5>Consonants chart</h5>
       <div className='chart-container'>
         <ChartComponent characterCounts={stats.getTopConsonants()} />
       </div>

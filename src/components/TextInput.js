@@ -28,7 +28,7 @@ const TextInput = () => {
           rows="4"
           cols="50"
         ></textarea>
-        <button onClick={handleSubmit}>Submit</button>
+        <button onClick={handleSubmit}>Analyze</button>
       </div>
       {submittedText && (
         <div className="answer-container">

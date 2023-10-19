@@ -44,12 +44,12 @@ const CharacterDisplayerComponent = ({ text }) => {
           <h5>Other characters</h5>
         </div>
       </div>
-      <p className='display-characters'>
-        {openSection === 'content' && <p>{displayer.showContent()}</p>}
-        {openSection === 'vowels' && <p>{displayer.showVowels()}</p>}
-        {openSection === 'consonants' && <p>{displayer.showConsonants()}</p>}
-        {openSection === 'otherCharacters' && <p>{displayer.showOtherCharacters()}</p>}
-      </p>
+      <div className='display-characters'>
+        {openSection === 'content' && <div>{displayer.showContent()}</div>}
+        {openSection === 'vowels' && <div>{displayer.showVowels()}</div>}
+        {openSection === 'consonants' && <div>{displayer.showConsonants()}</div>}
+        {openSection === 'otherCharacters' && <div>{displayer.showOtherCharacters()}</div>}
+      </div>
     </div>
   )
 }

@@ -6,7 +6,7 @@
     padding: 20px;
     margin: 20px;
     text-align: center;
-    color: #282c34;
+    color: #0f0f0f;
   }
 
  .results {
@@ -18,17 +18,20 @@
     max-width: 1000px;
   }
 
-  .display-characters p {
+  .display-characters {
     flex-wrap: wrap;
     justify-content: center;
     display: flex;
     max-width: 1000px;
+    color: darkorange;
+    padding: 10px;
+    overflow: auto;
   }
 
   .result-frame {
     flex: 1; 
     max-width: 300px; 
-    background-color: #ffffff74;
+    background-color: #ffffff;
     border-radius: 5px;
     padding: 20px; 
     cursor: pointer;
