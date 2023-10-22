@@ -2,20 +2,19 @@
 
 ### Funktionella krav
 
+De funktionella kraven är organiserade i issues på GitHub. Varje issue har en titel, en beskrivning och en checklista med punkter som ska uppfyllas. Varje punkt i checklistan är ett funktionellt krav.
+
 ### Icke-funktionella krav
+
+**Webbapplikationens icke+funktionella krav är:**
+
+- Webbapplikationen ska ha ett tilltalande gränssnitt.
+- Webbapplikationen ska vara lätt att använda.
+- Webbapplikationen ska vara lätt att förstå.
+- Webbapplikationen ska vara lätt att navigera.
 
 ### Issues
 
-| ID | Krav | Prioritet | Kommentar |
-| --- | --- | --- | --- |
-| 1 | Appen ska vara en webbapplikation. | Måste | |
-| 2 | Webbapplikationen ska skrivas i Reacts ramverk. | Måste | |
-| 3 | Webbapplikationen ska kunna hantera text. | Måste | |
-| 4 | Webbapplikatiobeb ska kunna analysera text. | Måste | |
-| 5 |  | Måste | |
-| 6 |  | Måste | |
-
-Utkast för issues:
 - [ ] 1. Appen ska vara en webbapplikation.
 - [ ] 2. Webbapplikationen ska hantera input i form av text.
 - [ ] 3. Webbapplikationen ska analysera texten genom att räkna olika kategorier.
