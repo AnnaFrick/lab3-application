@@ -66,9 +66,11 @@ The project is structured as follows:
 
 ## Additional Files
 
-- [kravspecifikation.md](/wiki/kravspecifikation.md): Document outlining the project requirements.
-- [vision.md](/wiki/vision.md): Document describing the project's vision.
-- [testfall.md](/wiki/testfall.md): Document with test cases for the project.
+In the GitHub repository, you can these detailed find the following files: 
+
+- [Kravspecifikation](https://github.com/AnnaFrick/lab3-application/wiki/Kravspecifikation): Document outlining the project requirements.
+- [Projektvision](https://github.com/AnnaFrick/lab3-application/wiki/Projektvision): Document describing the project's vision.
+- [Testfall](https://github.com/AnnaFrick/lab3-application/wiki/Testfall): Document with test cases for the project.
 
 ## Future Improvements
 
