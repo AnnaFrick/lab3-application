@@ -3,9 +3,9 @@ import React, { useState } from 'react'
 import CharacterCounterComponent from './CharacterCounter'
 import CharacterDisplayerComponent from './CharacterDisplayer'
 import CharacterStatisticsComponent from './CharacterStatistics'
-import '../TextInput.css'
+import '../styles/TextInput.css'
 
-const TextInput = () => {
+const TextAnalyzer = () => {
   const [inputText, setInputText] = useState('')
   const [submittedText, setSubmittedText] = useState('')
 
@@ -41,4 +41,4 @@ const TextInput = () => {
   )
 }
 
-export default TextInput
+export default TextAnalyzer

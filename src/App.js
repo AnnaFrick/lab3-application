@@ -1,5 +1,5 @@
-import TextInput from './components/TextInput';
-import './App.css';
+import TextAnalyzer from './components/TextAnalyzer';
+import './styles/App.css';
 
 const App = () => {
   return (
@@ -7,7 +7,7 @@ const App = () => {
       <div className="App-header">
         <h1>Text analyzer app!</h1>
       </div>
-      <TextInput />
+      <TextAnalyzer />
     </div>
   )
 

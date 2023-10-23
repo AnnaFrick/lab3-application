@@ -1,7 +1,7 @@
 import React from 'react'
 import { CharacterStatistics } from 'character-analysis-module'
 import ChartComponent from './StatisticsChart'
-import '../CharacterComponent.css'
+import '../styles/CharacterComponent.css'
 
 const CharacterStatisticsComponent = ({ text }) => {
   const stats = new CharacterStatistics(text)

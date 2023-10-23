@@ -1,6 +1,6 @@
 import React from 'react'
 import { CharacterCounter } from 'character-analysis-module'
-import '../CharacterComponent.css'
+import '../styles/CharacterComponent.css'
 
 const CharacterCounterComponent = ({ text }) => {
   const counter = new CharacterCounter(text)

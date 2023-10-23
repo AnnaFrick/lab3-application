@@ -10,18 +10,24 @@ Kapitel 2 har påverkat mig på det sättet att jag har gjort justeringar på na
 
 ## Kapitel 3: Functions
 
+Budskapet från kapitel 3 om att funktioner ska vara korta och även kortare än så är något jag burit med mig från laboration 2 och försökt bära med mig genom arbetet av både modul och applikation. Däremot är det vissa funktioner i min modul som längre än 20 rader, vilket är det rekommenderade maxantalet rader för en funktion. Dessa funktioner hade kunnats brytas ner till fler mindre funktioner då de gör mer än en sak. 
 
+![Functions](./img/functions1.png)
+
+Däremot var det en utmaning med funktioner i test-appen ur ett annat perspektiv, kapitlet tar upp att idealet for antalet argument är noll. En funktion `test` tar tre argument för att validera att metoderna i modulen utför det som är förväntat, något som man skulle kunna modifiera. Funktionen i sig är däremot kort, vilket i sig är positivt.  
+
+![Functions](./img/functions.png)
 
 ## Kapitel 4: Comments
 
-Tidigare har jag ofta velat kommentera varje klass, funktion eller klass med en beskrivande kommentar, även om jag själv inte tyckt det medfört något utöver det uppenbara (något som blivit för att inte få lintningsfel(Mandated Comments)). Under denna laboration har jag valt att ta bort i princip alla kommentarer. Just för att gå tillbaka och reflektera om det verkligen behövs eller inte. I många fall har en förklarande namngivning och kort funktion gjort att en kommentar blir överflödig (Redundant). Jag tycker det däremot är svårt att ge djupare innebörd med hjälp av kommentarer, det är svårt att kommentera vad syftet med en funktion är eller hur den ska användas.
+I tidigare projekt har jag ofta känt att jag behövde kommentera varje klass, funktion eller kodblock med beskrivande kommentarer, även om de i själva verket inte tillförde något utöver det uppenbara. I vissa fall gjorde jag detta enbart för att undvika lintningsfel, där kommentarer krävdes som en standard.
 
-I övrigt tycker jag det är bra med kommentarer, jag gillar tydlighet och det tycker jag kommentarer medför. Men då är det på villkoret att kommentarerna är organiserade och har en tydlig struktur.
+Under den senaste laborationen har jag ändrat min praxis och valt att i princip ta bort alla dessa kommentarer. Jag gjorde detta för att ge mig själv utrymme att reflektera över om kommentarerna verkligen var nödvändiga eller överflödiga. Jag insåg att i många situationer kunde enklare och mer beskrivande namngivning av variabler och korta funktioner eliminera behovet av kommentarer.
 
-Scary Noise
-Commented-Out Code 
+Jag vill dock framhålla att jag inte är emot att kommentera kod i sig. Jag värdesätter tydlighet och ser att välplacerade kommentarer kan förbättra förståelsen av koden. Men jag har kommit att inse att kommentarer bör vara strukturerade och ha en tydlig syftet för att vara effektiva.
 
-![Comments](./comments.png)
+*Använder en radkommentar för att förklara vad regex-uttrycket gör.*
+![Comments](./img/comments.png)
 
 ## Kapitel 5: Formatting
 
@@ -30,6 +36,9 @@ Varken modul eller applikation i detta projekt är några tyngdlyftare i densite
 Horisontellt ligger stort fokus på indentering för att öka läsbarheten av koden. Detta är något jag värderar högt och applicerar i min kod. Personligen har jag svårt att läsa kod som inte är indenterad, det sätts som en spärr i huvudet mig (nästintill allergisk reaktion). Både i modulen och applikationen har jag valt att använda mig av 2 spaces för indentering.
 
 Jag uppskattar det sistnämnda i kapitlet där Uncle Bob's Formatting Rules presenteras. Det är enkla regler som är lätta att applicera och som ger en tydlig struktur i koden. Varför? Jo, för att i exemplet är den vertikala densiteten lagom, den horisontella indenteringen är tydlig och det finns en tydlig struktur i koden.
+
+*Exempel på formattering av en komponent i applikationen.*
+![Formatting](./img/formatting.png)
 
 ## Kapitel 6: Objects and Data Structures
 
@@ -41,7 +50,7 @@ Error handling var något jag helt missade i min förra inlämning av modul. Nå
 
 ## Kapitel 8: Boundaries
 
-I kapitel 8 lyfts vikten av att hantera och integrera extern kod till ett projekt. Precis som kapitlet tar upp öppnar det upp stora möjligheter till att utveckla ett projekt. Dock medför det att man inte har full kontroll över koden som integreras. Lösning blir att lära sig testa och förstå den externa koden. Lite så fick jag göra när jag integrerade Recharts till applikationen. Applikationen har Recharts används som ett "third-party" bibliotek med dess inbyggda metoder för att ta fram ett grafiskt tabelldiagram. 
+I kapitel 8 lyfts vikten av att hantera och integrera extern kod till ett projekt. Precis som kapitlet tar upp öppnar det upp stora möjligheter till att utveckla ett projekt. Dock medför det att man inte har full kontroll över koden som integreras. Lösning blir att lära sig testa och förstå den externa koden. Lite så fick jag göra när jag integrerade Recharts till applikationen. Applikationen har Recharts används som ett tredjepartsbibliotek med dess inbyggda metoder för att ta fram ett grafiskt tabelldiagram. Modulen som är även det ett tredjepartsbibliotek interageras till applikationen genom ett npm paket. Skillnaden där är att jag har full kontroll över koden i modulen och kan göra ändringar i den.
 
 ## Kapitel 9: Unit Tests
 
@@ -53,4 +62,4 @@ Kapitel 10 tar upp vikten av att klasser ska vara små och ha ett tydligt syfte.
 
 ## Kapitel 11: Systems
 
-När det gäller kapitel 11 "Systems", har jag inte behövt tänka på systemnivån i varken applikationen eller modulen. Projektet har inte krävt att jag överväger systemnivån eftersom det är relativt enkelt och inte involverar hantering av stora datamängder eller komplexa systemkomponenter. Om projektet däremot skulle växa, vilket det finns ambitioner om i vidare utveckling, skulle det vara en god idé att organisera projektet i systemnivå där varje systemkomponent har ett tydligt syfte och ansvarsområde.
+När det gäller kapitel 11 "Systems", har jag inte tänkt på systemnivån i varken applikationen eller modulen. Projektet har inte krävt att jag överväger systemnivån eftersom det är relativt enkelt och inte involverar hantering av stora datamängder eller komplexa systemkomponenter. Om projektet däremot skulle växa, vilket det finns ambitioner om i vidare utveckling, skulle det vara en god idé att organisera projektet i systemnivå där varje systemkomponent har ett tydligt syfte och ansvarsområde.

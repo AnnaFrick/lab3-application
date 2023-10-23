@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CharacterDisplayer } from 'character-analysis-module'
-import '../CharacterComponent.css'
+import '../styles/CharacterComponent.css'
 
 const CharacterDisplayerComponent = ({ text }) => {
   const displayer = new CharacterDisplayer(text)
