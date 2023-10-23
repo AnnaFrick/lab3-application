@@ -1,6 +1,6 @@
 # Reflections on Clean Code
 
-Inledningsvis vill jag börja med en egen reflektering över applicering av Clean Clode till detta projekt. Jag tycker själv att färdigställa (utefter Clean Codes riktlinjer) redan skriven kod är en utmaning. Främsta utmaningen är att hitta och sedan optimera redan färdiga lösningar till det bättre. Klart att det är nyttigt och lärorikt med dessa utmaningar, men det blir även en utmaning att känna sig nöjd. Det som leveras mot en deadline kanske inte är det optimala man önskat. Vilket känns frustrerande men som samtidigt får mig att vilja utvecklas och bli en bättre strategisk utvecklare.
+Inledningsvis vill jag göra en egen reflektion över arbetet med Clean Code. Att utvärdera sin egna kod utifrån bokens ideal har varit en intressant utmaning. Den främsta utmaningen är att känna mig nöjd mot denna dead line, vilket jag helt ärligt inte är (om man någonsin kan vara det ens). Nu vid inlämning känns det något frustrerande men samtidigt får det mig att vilja utvecklas och bli en bättre strategisk utvecklare. Here we go!
 
 ## Kapitel 2: Meaningful Names
 
