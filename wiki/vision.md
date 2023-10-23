@@ -6,7 +6,7 @@ Att ta reda på hur många tecken eller ord som finns i en text kan ofta vara en
 
 Att sedan få reda på mer intressant informatiom om sin text kan vara en bonus, så som att ta reda på vilka tecken, vokaler och konsonanter som används mest. Information som är ännu svårare att ta reda på manuellt. Allt detta kan dock göras enklare med hjälp av en applikation som kan analysera text.
 
-Visionen med denna applikation är att göra ett verktyg för att analysera text på ett enkelt sätt. Detta ska göras genom att använda Sign Analysis Module. Modulen tar emot text och analyserar den på olika vis. Resultatet visas i denna applikation med ett tilltalande och lättförståeligt gränssnitt.
+Visionen med denna applikation är att göra ett verktyg för att analysera text på ett enkelt sätt. Detta ska göras genom att använda Character Analysis Module. Modulen tar emot text och analyserar den på olika vis. Resultatet visas i denna applikation med ett tilltalande och lättförståeligt gränssnitt.
 
 
 ## Användare och målgrupp
