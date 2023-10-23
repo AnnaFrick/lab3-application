@@ -1,5 +1,5 @@
 import TextAnalyzer from './components/TextAnalyzer';
-import './styles/App.css';
+import './App.css';
 
 const App = () => {
   return (

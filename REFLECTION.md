@@ -42,7 +42,12 @@ Jag uppskattar det sistnämnda i kapitlet där Uncle Bob's Formatting Rules pres
 
 ## Kapitel 6: Objects and Data Structures
 
-När det kommer till objekt och datastrukturer kan man hitta  
+I kapitel 6 belyser boken vikten i objektorienterad programmering och hur man hanterar både object och datastrukturer. Detta är något jag har applicerat i modulen och applikationen. I modulen har jag valt att dela upp koden i klasser som hanterar olika delar av applikationen. 
+
+Kapitlet tar även upp funktionsanrop och fenomenet train wreck. I och med att det var något jag själv hade som ämne under workshop 2 var det något jag försökt undvika men inte helt lyckats med. I modulens test-app förekommer train wreck, något som jag hade kunnat undvika genom att skapa variabler som håller funktionsanropen. Det hade gjort koden mer läsbar.
+
+*Train wreck i test-appen.*
+![Objects and Data Structures](./img/objects-data-structures.png)
 
 ## Kapitel 7: Error Handling
 

@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import CharacterCounterComponent from './CharacterCounter'
 import CharacterDisplayerComponent from './CharacterDisplayer'
 import CharacterStatisticsComponent from './CharacterStatistics'
-import '../styles/TextInput.css'
+import '../TextAnalyzer.css'
 
 const TextAnalyzer = () => {
   const [inputText, setInputText] = useState('')
