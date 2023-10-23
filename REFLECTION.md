@@ -6,6 +6,7 @@ Inledningsvis vill jag börja med en egen reflektering över applicering av Clea
 
 Kapitel 2 har påverkat mig på det sättet att jag har gjort justeringar på namn i både utveckling av applikationen och modulen. Min modul som först hette `Sign Analysis Module ` har fått det nya namnet `Character Analysis Module`. Ordvalet "sign" har helt och hållet bytts ut mot "character" då sign har en mer diffus betydelse och kan tolkas på olika sätt. Det nya namnet ger en mer tydlighet i vad modulen och applikatioen ska utföra, det har en starkare koppling till just tecken i en text som applikationen och modulen ska analysera. I princip är detta vad hela kapitel 2 handlar om, att namn ska vara tydliga och meningsfulla, men framförallt berör detta avsnittet om att namn ska vara avslöjande (intention-revealing). Inga namn ska behöva förklaras, de ska vara självförklarande. 
 
+*Komponent med beskrivande namn i applikationen som använder sig av `character-analysis-module`.*
 ![Meaningful Names](./img/meaningful-names.png)
 
 ## Kapitel 3: Functions
@@ -51,20 +52,37 @@ Kapitlet tar även upp funktionsanrop och fenomenet train wreck. I och med att d
 
 ## Kapitel 7: Error Handling
 
-Error handling var något jag helt missade i min förra inlämning av modul. Något jag nu ändrat på och har applicerat i modulen för att kunna hantera eventuella fel som kan uppstå. Varje klass kastar ett undantag som fångas upp i try-catch block. I catch blocket fångas undantaget upp och skickas vidare till en funktion som skriver ut ett felmeddelande till användaren. Däremot är det inte några större fel som kan uppstå i modulen vilket gjorde applicering av error hantering ganska enkelt.
+Error handling var något jag helt missade i min förra inlämning av modul. Något jag nu ändrat på och har applicerat i modulen för att kunna hantera eventuella fel som kan uppstå. Varje klass kastar ett undantag som fångas upp i try-catch block. I catch blocket fångas undantaget upp och skickas vidare till en funktion som skriver ut ett felmeddelande till användaren. 
+
+Liknande procedur har jag applicerat i applikationen där varje komponent som används i applikationen kastar ett undantag som fångas upp i en try-catch block. I catch blocket fångas undantaget upp och skickas vidare till en funktion som skriver ut ett felmeddelande till användaren. Det gör att kommunikationen med användaren blir tydligare och att användaren förstår vad som blev fel, vilket i sin tur bidrar till en trevligare användarupplevelse. Felhantering är dessutom minst lika viktigt för att kunna kommunicera mellan programmerare i utvecklingsmiljön.
+
+*Exempel på hantering av fel i modulen.*
+![Error Handling](./img/error-handling.png)
 
 ## Kapitel 8: Boundaries
 
-I kapitel 8 lyfts vikten av att hantera och integrera extern kod till ett projekt. Precis som kapitlet tar upp öppnar det upp stora möjligheter till att utveckla ett projekt. Dock medför det att man inte har full kontroll över koden som integreras. Lösning blir att lära sig testa och förstå den externa koden. Lite så fick jag göra när jag integrerade Recharts till applikationen. Applikationen har Recharts används som ett tredjepartsbibliotek med dess inbyggda metoder för att ta fram ett grafiskt tabelldiagram. Modulen som är även det ett tredjepartsbibliotek interageras till applikationen genom ett npm paket. Skillnaden där är att jag har full kontroll över koden i modulen och kan göra ändringar i den.
+I kapitel 8 lyfts vikten av att hantera och integrera extern kod till ett projekt. Precis som kapitlet tar upp öppnar det upp stora möjligheter till att utveckla ett projekt. Dock medför det att man inte har full kontroll över koden som integreras. Lösning blir att lära sig testa och förstå den externa koden. Lite så fick jag göra när jag integrerade Recharts till applikationen. Applikationen har Recharts används som ett tredjepartsbibliotek med dess inbyggda metoder för att ta fram ett grafiskt tabelldiagram. Modulen som även den är ett tredjepartsbibliotek interageras till applikationen genom ett npm paket. Skillnaden där är att jag har full kontroll över koden i modulen och kan göra ändringar i den.
+
+![Boundaries](./img/boundaries.png)
 
 ## Kapitel 9: Unit Tests
 
+Unit tests är ett viktigt verktyg för att kunna testa och verifiera att koden fungerar som den förväntas göra. I mitt projekt har jag använt manuella enhetstester, vilket har hjälpt mig att validera koden och öka förtroendet för dess funktionalitet. Att använda funktioner för att verifiera resultat har förenklat testprocessen. Jag har nu insett att att gå vidare till automatiserade enhetstester kan ytterligare förbättra testningen och identifiera fel tidigare i utvecklingscykeln, vilket kommer att vara ett värdefullt steg för att upprätthålla kodkvalitet
 
+![Unit Tests](./img/unit-tests.png)
 
 ## Kapitel 10: Classes
 
-Kapitel 10 tar upp vikten av att klasser ska vara små och ha ett tydligt syfte. Detta är något jag färsäkt applicera i både modul och applikation. I modulen har jag valt att dela upp klasserna med separata ansvarsområden. En klass hanterar att räkna tecken i en text, en klass hanterar att visa olika kategorier av tecken och en klass hanterar statistik för tecken. I och med att applikationen är skriven i React har jag valt att dela upp koden i olika komponenter som speglar klasserna från modulen. En komponent hanterar att visa räknade tecken ur en text, en komponent visar de olika tecken som finns i de olika kategorierna, en komponent hanterar att visa statistik för tecken och en komponent hanterar att visa ett diagram för statistiken. Komponenterna hade kunnat brytits ned till ännu mindre återanvöndbara beståndsdelar. 
+Kapitel 10 tar upp vikten av att klasser ska vara små och ha ett tydligt syfte. Detta är något jag försökt applicera i både modul och applikation. I modulen har jag valt att dela upp klasserna med separata ansvarsområden. En klass hanterar att räkna tecken i en text, en klass hanterar att visa olika kategorier av tecken och en klass hanterar statistik för tecken. I och med att applikationen är skriven i React har jag valt att dela upp koden i olika komponenter som speglar klasserna från modulen. En komponent hanterar att visa räknade tecken ur en text, en komponent visar de olika tecken som finns i de olika kategorierna, en komponent hanterar att visa statistik för tecken och en komponent hanterar att visa ett diagram för statistiken. Komponenterna hade kunnat brytits ned till ännu mindre återanvändbara beståndsdelar. 
+
+*TextAnalyzer komponenten som tar in andra komponenter.*
+![Classes](./img/classes.png)
 
 ## Kapitel 11: Systems
 
-När det gäller kapitel 11 "Systems", har jag inte tänkt på systemnivån i varken applikationen eller modulen. Projektet har inte krävt att jag överväger systemnivån eftersom det är relativt enkelt och inte involverar hantering av stora datamängder eller komplexa systemkomponenter. Om projektet däremot skulle växa, vilket det finns ambitioner om i vidare utveckling, skulle det vara en god idé att organisera projektet i systemnivå där varje systemkomponent har ett tydligt syfte och ansvarsområde.
+När det gäller kapitel 11 "Systems", har jag inte tänkt på systemnivån i varken applikationen eller modulen. Projektet har inte krävt att jag överväger systemnivån eftersom det är relativt enkelt och inte involverar hantering av stora datamängder eller komplexa systemkomponenter. Om man i dagsläget skulle applicera någon form av systemnivå skulle man kunna jämföra modulen som en är uppbyggd med sina klasser som var och en hanterar sin sak för att göra modulen komplett och fungerande. 
+
+Om projektet däremot skulle växa, vilket det finns ambitioner om i vidare utveckling, skulle det vara en god idé att organisera projektet i systemnivå där varje systemkomponent har ett tydligt syfte och ansvarsområde.
+
+*Exempel på vad som skulle kunna utvecklas i systemnivå i modulen.*
+![Systems](./img/systems.png)
