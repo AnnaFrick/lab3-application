@@ -1,16 +1,74 @@
 # Analyzer Application
 
-## Description
+## Introduction
+Welcom eto the Text Analyzer! This web application built using Create React App that allows users to input text and analyze it using a custom `character-analysis-module` to count characters and words. 
 
-Welcome to the Analyzer Application. This application is designed to analyze texts and provide a variety of statistics about the text. The application is designed to be run from the command line. The application is written with the React framework to create the best experience for the user. The application is also designed to be used with the Character Analysis Module, which is a module that analyzes text and provides a variety of statistics about the text. The application is also designed to be used with the Recharts library, which is a library that provides a variety of charts and graphs to display the statistics about the text.
+## Features
+
+**Input text for analysis:**
+
+- Users can input text for analysis in the text area. By clicking on the button "Analyze", the text will be analyzed.
+
+**Character count:**
+
+- Users can see the number of different categories of characters in the text.
+- Characters that are counted: total amount of characters, vowels, consonants and other characters (including numbers and punctuation).
+
+**Word count:**
+
+- Users can see the number of words in the text.
+
+**Character statistics:**
+
+- Users can see the top 5 most used characters in the text formatted as toplists and graphical charts.
+- The toplists are rated: of all characters, vowels, consonants and other characters (including numbers and punctuation).
+
+## Installation
+
+To run this application locally, follow these steps:
+
+Clone the repository:
+
+    git clone https://github.com/AnnaFrick/lab3-application.git
+
+Navigate to the project directory:
+
+    cd text-analyzer
+
+Install the required dependencies:
+
+    npm install
 
 ## Usage
 
-To use the application, you need to have Node.js installed on your computer. You also need to have the Character Analysis Module installed on your computer. You also need to have the Recharts library installed on your computer.
+Start the development server:
 
-To run the application, you need to run the following command in the command line:
+    npm start
 
-```
-npm start
-```
+Open your web browser and go to http://localhost:3000 to use the Text Analyzer.
 
+## Project Structure
+
+The project is structured as follows:
+
+- src/: Contains the source code for the application.
+    - TextAnalyzer.js: The main component for the Text Analyzer.
+    - CharacterCounter.js: Component for counting characters.
+    - CharacterDisplayer.js: Component for displaying characters.
+    - CharacterStatistics.js: Component for character statistics.
+- character-analysis-module/: The custom module for character and word analysis.
+
+## Additional Files
+
+- [kravspecifikation.md](/wiki/kravspecifikation.md): Document outlining the project requirements.
+- [vision.md](/wiki/vision.md): Document describing the project's vision.
+- [testfall.md](/wiki/testfall.md): Document with test cases for the project.
+
+## Future Improvements
+
+This could only be the beginning! Here are some ideas for future improvements:
+
+- Add pages to the application for the different features.
+- Add animations to the application.
+- Add a feature that allows users to save their results.
+- Develope a history feature that saves the user's previous inputs.
