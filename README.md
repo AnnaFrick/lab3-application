@@ -1,13 +1,15 @@
 # Analyzer Application
 
 ## Introduction
-Welcom eto the Text Analyzer! This web application built using Create React App that allows users to input text and analyze it using a custom `character-analysis-module` to count characters and words. 
+Welcome to the Text Analyzer! This web application built using Create React App that allows users to input text and analyze it using a custom `character-analysis-module` to count characters and words. 
 
 ## Features
 
 **Input text for analysis:**
 
 - Users can input text for analysis in the text area. By clicking on the button "Analyze", the text will be analyzed.
+
+![Analyze counting](/img/analyze-count.png)
 
 **Character count:**
 
@@ -22,6 +24,10 @@ Welcom eto the Text Analyzer! This web application built using Create React App 
 
 - Users can see the top 5 most used characters in the text formatted as toplists and graphical charts.
 - The toplists are rated: of all characters, vowels, consonants and other characters (including numbers and punctuation).
+
+![Showing Toplists](/img/analyze-topfive.png)
+![Showing Charts](/img/analyze-chart.png)
+![Showing Charts](/img/analyze-chart2.png)
 
 ## Installation
 
